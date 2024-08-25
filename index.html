@@ -4,14 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Relaxamento</title>
+
+
     <style>
+
+        img{
+            border-radius: 15px;
+        }
+
         .centralizar-tudo {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            gap: 20px; /* Espaço entre as imagens, se desejar */
+            gap: 20px; 
         }
         body {
             background: linear-gradient(-45deg, #050260, #120669, #022c3b, #04244f);
@@ -38,16 +45,32 @@
             border-radius: 10%;
         }
     </style>
+    
 </head>
 <body>
-    
+  
     <img style="margin-bottom: 0px;" src="https://ifsertaope.edu.br/wp-content/uploads/2023/08/logoifsertaope.png" alt="">
     <div class="centralizar-tudo">
         <div class="image-container">
 
+            <button 
+            style="
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    padding: 10px 20px;
+    background-color: rgb(4, 71, 4);
+    color: white;
+    border: none;
+    border-radius: 65px;
+    cursor: pointer;
+            "
+            onclick="window.location.href='login.html'">Login</button>
+
+
             <img class="image" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiaIjZUldPNf2dhXugA_kp4eMod-v76Hbg41wh4NvsL7vBt4OI51QaKCxXDj-52_9MjHG-FcqLDtJeJgfETFyEjLhKchN-QP7TUmnzOQrNn3pUL70W_-kqfMtePmmJf1v4bK11Y7p5zEU3fgxUWUA4pit_XV52W3Rkj9sK0IxVBWXjvPivA34yKoi_aomQ/s150/mar.png" id="image1">
             <audio id="myAudio1">
-                <source src="mar.mp3" type="audio/mpeg">
+                <source src="áudio/mar.mp3" type="audio/mpeg">
             </audio>
             <div class="volume-control">
                 <input type="range" min="0" max="1" step="0.1" value="1" id="volume1">
@@ -57,7 +80,7 @@
         <div class="image-container">
             <img class="image" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicRY3H8A8D4b5fLbRCS8Consz-gE6nV0NUhjwd7DqDWM86kgC_YZk-xgZin5VSdos0cUU-JZwWJfTMO3e4lLM_zBr3giuDfmYoU5lZYEiba9fnWCT1aLDUD9H70B-ARcSLKGIzl99L8woCJsvfIhCSwiHGW8Fw9om6kIgJEVWsrIh0XpI8mlK3CLwMZqw/s150/passaros.png" id="image2">
             <audio id="myAudio2">
-                <source src="natureza.mp3" type="audio/mpeg">
+                <source src="áudio/natureza.mp3" type="audio/mpeg">
             </audio>
             <div class="volume-control">
                 <input type="range" min="0" max="1" step="0.1" value="1" id="volume2">
@@ -67,7 +90,7 @@
         <div class="image-container">
             <img class="image" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDzX6rAITOVJ4-qw0N0x4MYf7XHodiNM4LA7GjcmR2CxKkrDg3jKyLV4lQKNMAVjGG_ZV18kn3LIG7AZz7FCzNGRmVFhHKbyMSKIX0PbT37l9TvySiTvlzrp6FpLr9H7uIcDQCjT2qZHgf10U1R-jhuCNPNULZQFxYaqyFqZwnfEXsrBnPayw1JAiFY50/s150/Cachoeira.png" id="image3">
             <audio id="myAudio3">
-                <source src="cachoeira.mp3" type="audio/mpeg">
+                <source src="áudio/cachoeira.mp3" type="audio/mpeg">
             </audio>
             <div class="volume-control">
                 <input type="range" min="0" max="1" step="0.1" value="1" id="volume3">
@@ -77,7 +100,7 @@
         <div class="image" class="image-container">
             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixwcsupK5_Vbe1sKg7lYmiCltUp93avnMZvJpWGqGhpYavTWHb8mSpvXw9nrkLpaZR7AvvNdIRSkGYwZY6-maofw7ewT_qoPz4a1PsJ44kny0ewPA7DEsXKw7Q0hCA02Qrj-qRXf1Jtwq7aZm4l2-EmR_St0tg9HAALy-v_Nsy65K4i1SpRMQTASC6vlc/s150/vento.png" id="image4">
             <audio id="myAudio4">
-                <source src="vento.mp3" type="audio/mpeg">
+                <source src="áudio/vento.mp3" type="audio/mpeg">
             </audio>
             <div class="volume-control">
                 <input type="range" min="0" max="1" step="0.1" value="1" id="volume4">
@@ -87,7 +110,7 @@
         <div class="image-container">
             <img class="image" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhOn9IxpQkC2Da2WCcuRk_rknBoa7jzxWVnlxagcZHHlkdu0W95VdQa0BEXhYsKvJJ8CzTqotaF9HDeZ0JPtRdHrVJW-4YVm-sqX1u_PXNm6RpCs0GJyFpvLFih1DHAYb6aPxKGkQ9krNgzzxuhKCSYAM1iksKQ_8R3cuyVak3hPPVIptC6vSJo19X4qvI/s150/floresta.png" id="image5">
             <audio id="myAudio5">
-                <source src="selva.mp3" type="audio/mpeg">
+                <source src="áudio/selva.mp3" type="audio/mpeg">
             </audio>
             <div class="volume-control">
                 <input type="range" min="0" max="1" step="0.1" value="1" id="volume5">
@@ -97,14 +120,13 @@
         <div class="image" class="image-container">
             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhwVPHMh07b9wx7P9_t0H9Z2RYeapCFWee-Pd-d_rQQvqPHvFmbGLFDAiwpa3whYnpKca9_b6FQpkZzbPNMV8jPAiVdmvlNYg6jlsILu2HVTO4anavkkZViUXMvcjiHh9ia3BBqSfMKRl7USTtYvZC2jDa_H2ukvR1gap4QpACJhn0hrSnC1urxQ_2t_l4/s150/fogueira.png" id="image6">
             <audio id="myAudio6">
-                <source src="fogueira.mp3" type="audio/mpeg">
+                <source src="áudio/fogueira.mp3" type="audio/mpeg">
             </audio>
             <div class="volume-control">
                 <input type="range" min="0" max="1" step="0.1" value="1" id="volume6">
             </div>
         </div>
 
-    </div>
     <script>
         const audioElements = document.querySelectorAll('audio');
         const volumeInputs = document.querySelectorAll('.volume-control input');
